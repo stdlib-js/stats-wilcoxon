@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-wilcoxon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Wilcoxon signed rank test.",
   "license": "Apache-2.0",
   "author": {
