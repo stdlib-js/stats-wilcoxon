@@ -1,0 +1,38 @@
+{
+  "name": "@stdlib/stats-wilcoxon",
+  "version": "0.0.0",
+  "description": "Wilcoxon signed rank test.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stats-wilcoxon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "statistics",
+    "stats",
+    "mathematics",
+    "math",
+    "summary",
+    "nonparametric",
+    "signed",
+    "paired",
+    "difference",
+    "median",
+    "symmetric",
+    "distribution",
+    "test",
+    "hypothesis"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
