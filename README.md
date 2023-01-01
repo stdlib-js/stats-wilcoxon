@@ -24,14 +24,30 @@ limitations under the License.
 
 > One-sample and paired Wilcoxon signed rank test.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-wilcoxon
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@deno/mod.js';
+var wilcoxon = require( '@stdlib/stats-wilcoxon' );
 ```
 
 #### wilcoxon( x\[, y]\[, opts] )
@@ -224,7 +240,7 @@ out = wilcoxon( arr, {
 By default, the test uses the exact distribution of the rank statistic to calculate the critical values for the test in case of no ties and no zero-differences. Since it is more computationally efficient, starting with fifty observations a normal approximation is employed. If you would like the test to use the correct distribution even for larger samples, set the `exact` option to `true`.
 
 ```javascript
-var normal = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal' ).factory;
+var normal = require( '@stdlib/random-base-normal' ).factory;
 var rnorm;
 var arr;
 var out;
@@ -268,7 +284,7 @@ out = wilcoxon( arr, {
 By default, when using the normal approximation, the test uses a continuity correction, which adjusts the Wilcoxon rank statistic by `0.5` towards the mean. To disable this correction, set `correction` to `false`.
 
 ```javascript
-var normal = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal' ).factory;
+var normal = require( '@stdlib/random-base-normal' ).factory;
 var rnorm;
 var arr;
 var out;
@@ -320,8 +336,8 @@ out = wilcoxon( arr, {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
-import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@deno/mod.js';
+var uniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
+var wilcoxon = require( '@stdlib/stats-wilcoxon' );
 
 var table;
 var runif;
@@ -396,7 +412,7 @@ table = out.print();
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -413,7 +429,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -462,9 +478,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/ttest]: https://github.com/stdlib-js/stats-ttest/tree/deno
+[@stdlib/stats/ttest]: https://github.com/stdlib-js/stats-ttest
 
-[@stdlib/stats/ztest]: https://github.com/stdlib-js/stats-ztest/tree/deno
+[@stdlib/stats/ztest]: https://github.com/stdlib-js/stats-ztest
 
 <!-- </related-links> -->
 
