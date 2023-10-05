@@ -29,15 +29,15 @@ var wilcoxon = require( './../../dist' );
 
 // FIXTURES //
 
-var twosidedApprox = require( './../..xtures/r/twosided_approx.json' );
-var greaterApprox = require( './../..xtures/r/greater_approx.json' );
-var lessApprox = require( './../..xtures/r/less_approx.json' );
-var pairedLess = require( './../..xtures/r/paired_less.json' );
-var twosided = require( './../..xtures/r/twosided.json' );
-var greater = require( './../..xtures/r/greater.json' );
-var paired = require( './../..xtures/r/paired.json' );
-var ties = require( './../..xtures/r/ties.json' );
-var less = require( './../..xtures/r/less.json' );
+var twosidedApprox = require( './../fixtures/r/twosided_approx.json' );
+var greaterApprox = require( './../fixtures/r/greater_approx.json' );
+var lessApprox = require( './../fixtures/r/less_approx.json' );
+var pairedLess = require( './../fixtures/r/paired_less.json' );
+var twosided = require( './../fixtures/r/twosided.json' );
+var greater = require( './../fixtures/r/greater.json' );
+var paired = require( './../fixtures/r/paired.json' );
+var ties = require( './../fixtures/r/ties.json' );
+var less = require( './../fixtures/r/less.json' );
 
 
 // TESTS //
