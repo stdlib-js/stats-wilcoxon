@@ -18,44 +18,47 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # Wilcoxon Signed Rank Test
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > One-sample and paired Wilcoxon signed rank test.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-wilcoxon
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-wilcoxon = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var wilcoxon = require( 'path/to/vendor/umd/stats-wilcoxon/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.wilcoxon;
-})();
-</script>
+var wilcoxon = require( '@stdlib/stats-wilcoxon' );
 ```
 
 #### wilcoxon( x\[, y]\[, opts] )
@@ -343,13 +346,8 @@ out = wilcoxon( arr, {
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {.factory;
+```javascript
+var uniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
 var wilcoxon = require( '@stdlib/stats-wilcoxon' );
 
 var table;
@@ -395,11 +393,6 @@ table = out.print();
 
     Test Decision: Fail to reject null in favor of alternative at 5% significance level
 */
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -447,7 +440,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -496,9 +489,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/ttest]: https://github.com/stdlib-js/stats-ttest/tree/umd
+[@stdlib/stats/ttest]: https://github.com/stdlib-js/stats-ttest
 
-[@stdlib/stats/ztest]: https://github.com/stdlib-js/stats-ztest/tree/umd
+[@stdlib/stats/ztest]: https://github.com/stdlib-js/stats-ztest
 
 <!-- </related-links> -->
 
