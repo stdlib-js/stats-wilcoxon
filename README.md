@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@esm/index.mjs';
+import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@v0.2.0-esm/index.mjs';
 ```
 
 #### wilcoxon( x\[, y]\[, opts] )
@@ -337,7 +337,7 @@ out = wilcoxon( arr, {
 <script type="module">
 
 var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
-import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@esm/index.mjs';
+import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@v0.2.0-esm/index.mjs';
 
 var table;
 var runif;
