@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-wilcoxon = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@umd/browser.js' )
+wilcoxon = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@v0.2.0-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var wilcoxon = require( 'path/to/vendor/umd/stats-wilcoxon/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@v0.2.0-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
