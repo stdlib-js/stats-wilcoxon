@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-wilcoxon/tags). For example,
+
+```javascript
 import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@v0.2.1-esm/index.mjs';
 ```
 
@@ -337,7 +342,7 @@ out = wilcoxon( arr, {
 <script type="module">
 
 var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
-import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@v0.2.1-esm/index.mjs';
+import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@esm/index.mjs';
 
 var table;
 var runif;
