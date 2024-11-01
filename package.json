@@ -55,7 +55,7 @@
     "@stdlib/stats-base-dists-normal-cdf": "^0.2.2",
     "@stdlib/stats-base-dists-signrank-cdf": "^0.2.2",
     "@stdlib/stats-ranks": "^0.2.2",
-    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2",
     "@stdlib/types": "^0.4.1",
     "@stdlib/utils-define-read-only-property": "^0.2.2",
     "@stdlib/utils-tabulate": "^0.2.2",
