@@ -37,8 +37,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/array-base-assert-contains": "^0.2.2",
     "@stdlib/array-float64": "^0.2.2",
-    "@stdlib/assert-contains": "^0.2.2",
     "@stdlib/assert-has-own-property": "^0.2.2",
     "@stdlib/assert-is-boolean": "^0.2.2",
     "@stdlib/assert-is-nan": "^0.2.2",
@@ -62,6 +62,7 @@
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
+    "@stdlib/assert-contains": "^0.2.2",
     "@stdlib/assert-is-object": "^0.2.2",
     "@stdlib/constants-float64-eps": "^0.2.2",
     "@stdlib/random-base-discrete-uniform": "^0.2.1",
