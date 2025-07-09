@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-23)
+## Unreleased (2025-07-09)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#7576](https://github.com/stdlib-js/stdlib/issues/7576)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +24,7 @@
 
 <details>
 
+-   [`b82041b`](https://github.com/stdlib-js/stdlib/commit/b82041b21006124a084827e4181ecc995e2c1767) - **chore:** fix EditorConfig lint errors [(#7595)](https://github.com/stdlib-js/stdlib/pull/7595) _(by Shivansh, Athan Reines)_
 -   [`6dc5ea7`](https://github.com/stdlib-js/stdlib/commit/6dc5ea77dbef23e522255c7c60e5db1ccfa85568) - **refactor:** use base array assertion utility _(by Athan Reines)_
 
 </details>
@@ -24,9 +37,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Shivansh
 
 </section>
 
