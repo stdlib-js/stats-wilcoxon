@@ -35,14 +35,32 @@ limitations under the License.
 
 > One-sample and paired Wilcoxon signed rank test.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-wilcoxon
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@deno/mod.js';
+var wilcoxon = require( '@stdlib/stats-wilcoxon' );
 ```
 
 #### wilcoxon( x\[, y]\[, opts] )
@@ -201,7 +219,7 @@ table = out.print();
 */
 ```
 
-By default, all zero-differences are discarded before calculating the ranks. Set `zeroMethod` to `pratt` when you wish differences of zero to be used in the rank calculation but then drop them or to `zsplit` when differences of zero are shall be used in the ranking procedure and the ranks then split between positive and negative ones. 
+By default, all zero-differences are discarded before calculating the ranks. Set `zeroMethod` to `pratt` when you wish differences of zero to be used in the rank calculation but then drop them or to `zsplit` when differences of zero are shall be used in the ranking procedure and the ranks then split between positive and negative ones.
 
 ```javascript
 var arr = [ 0, 2, 3, -1, -4, 0, 0, 8, 9 ];
@@ -235,21 +253,14 @@ out = wilcoxon( arr, {
 By default, the test uses the exact distribution of the rank statistic to calculate the critical values for the test in case of no ties and no zero-differences. Since it is more computationally efficient, starting with fifty observations a normal approximation is employed. If you would like the test to use the correct distribution even for larger samples, set the `exact` option to `true`.
 
 ```javascript
-var normal = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal' ).factory;
-var rnorm;
-var arr;
-var out;
-var i;
+var normal = require( '@stdlib/random-array-normal' );
 
-rnorm = normal( 0.0, 4.0, {
+var rnorm = normal.factory( 0.0, 4.0, {
     'seed': 100
 });
-arr = new Array( 100 );
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = rnorm();
-}
+var arr = rnorm( 100 );
 
-out = wilcoxon( arr, {
+var out = wilcoxon( arr, {
     'exact': false
 });
 /* e.g., returns
@@ -279,21 +290,14 @@ out = wilcoxon( arr, {
 By default, when using the normal approximation, the test uses a continuity correction, which adjusts the Wilcoxon rank statistic by `0.5` towards the mean. To disable this correction, set `correction` to `false`.
 
 ```javascript
-var normal = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-normal' ).factory;
-var rnorm;
-var arr;
-var out;
-var i;
+var normal = require( '@stdlib/random-array-normal' );
 
-rnorm = normal( 0.0, 4.0, {
+var rnorm = normal.factory( 0.0, 4.0, {
     'seed': 100
 });
-arr = new Array( 100 );
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = rnorm();
-}
+var arr = rnorm( 100 );
 
-out = wilcoxon( arr, {
+var out = wilcoxon( arr, {
     'correction': false
 });
 /* e.g., returns
@@ -331,26 +335,17 @@ out = wilcoxon( arr, {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
-import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@deno/mod.js';
+var uniform = require( '@stdlib/random-array-discrete-uniform' );
+var wilcoxon = require( '@stdlib/stats-wilcoxon' );
 
-var table;
-var runif;
-var arr;
-var out;
-var i;
-
-runif = uniform( -50.0, 50.0, {
+var runif = uniform.factory( -50.0, 50.0, {
     'seed': 37827
 });
-arr = new Array( 100 );
-for ( i = 0; i < arr.length; i++ ) {
-    arr[ i ] = runif();
-}
+var arr = runif( 100 );
 
 // Test whether distribution is symmetric around zero:
-out = wilcoxon( arr );
-table = out.print();
+var out = wilcoxon( arr );
+var table = out.print();
 /* e.g., returns
     One-Sample Wilcoxon signed rank test
 
@@ -407,7 +402,7 @@ table = out.print();
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -476,9 +471,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/ttest]: https://github.com/stdlib-js/stats-ttest/tree/deno
+[@stdlib/stats/ttest]: https://github.com/stdlib-js/stats-ttest
 
-[@stdlib/stats/ztest]: https://github.com/stdlib-js/stats-ztest/tree/deno
+[@stdlib/stats/ztest]: https://github.com/stdlib-js/stats-ztest
 
 <!-- </related-links> -->
 
