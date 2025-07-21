@@ -35,14 +35,32 @@ limitations under the License.
 
 > One-sample and paired Wilcoxon signed rank test.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-wilcoxon
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@esm/index.mjs';
+var wilcoxon = require( '@stdlib/stats-wilcoxon' );
 ```
 
 #### wilcoxon( x\[, y]\[, opts] )
@@ -235,7 +253,7 @@ out = wilcoxon( arr, {
 By default, the test uses the exact distribution of the rank statistic to calculate the critical values for the test in case of no ties and no zero-differences. Since it is more computationally efficient, starting with fifty observations a normal approximation is employed. If you would like the test to use the correct distribution even for larger samples, set the `exact` option to `true`.
 
 ```javascript
-import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-normal@esm/index.mjs';
+var normal = require( '@stdlib/random-array-normal' );
 
 var rnorm = normal.factory( 0.0, 4.0, {
     'seed': 100
@@ -272,7 +290,7 @@ out = wilcoxon( arr, {
 By default, when using the normal approximation, the test uses a continuity correction, which adjusts the Wilcoxon rank statistic by `0.5` towards the mean. To disable this correction, set `correction` to `false`.
 
 ```javascript
-import normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-normal@esm/index.mjs';
+var normal = require( '@stdlib/random-array-normal' );
 
 var rnorm = normal.factory( 0.0, 4.0, {
     'seed': 100
@@ -316,14 +334,9 @@ out = wilcoxon( arr, {
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import wilcoxon from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-wilcoxon@esm/index.mjs';
+```javascript
+var uniform = require( '@stdlib/random-array-discrete-uniform' );
+var wilcoxon = require( '@stdlib/stats-wilcoxon' );
 
 var runif = uniform.factory( -50.0, 50.0, {
     'seed': 37827
@@ -359,10 +372,6 @@ table = out.print();
 
     Test Decision: Fail to reject null in favor of alternative at 5% significance level
 */
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -393,7 +402,7 @@ table = out.print();
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -462,9 +471,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/ttest]: https://github.com/stdlib-js/stats-ttest/tree/esm
+[@stdlib/stats/ttest]: https://github.com/stdlib-js/stats-ttest
 
-[@stdlib/stats/ztest]: https://github.com/stdlib-js/stats-ztest/tree/esm
+[@stdlib/stats/ztest]: https://github.com/stdlib-js/stats-ztest
 
 <!-- </related-links> -->
 
