@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-21)
+## Unreleased (2026-01-31)
 
 <section class="issues">
 
@@ -24,6 +24,8 @@ This release closes the following issue:
 
 <details>
 
+-   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`842892d`](https://github.com/stdlib-js/stdlib/commit/842892db70da69098d8fb271ea19ae45c09a8a0e) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`b82041b`](https://github.com/stdlib-js/stdlib/commit/b82041b21006124a084827e4181ecc995e2c1767) - **chore:** fix EditorConfig lint errors [(#7595)](https://github.com/stdlib-js/stdlib/pull/7595) _(by Shivansh, Athan Reines)_
 -   [`6dc5ea7`](https://github.com/stdlib-js/stdlib/commit/6dc5ea77dbef23e522255c7c60e5db1ccfa85568) - **refactor:** use base array assertion utility _(by Athan Reines)_
 
@@ -37,9 +39,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 -   Shivansh
 
 </section>
