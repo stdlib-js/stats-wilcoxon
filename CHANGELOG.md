@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-03)
+## Unreleased (2026-04-08)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`bd60a20`](https://github.com/stdlib-js/stdlib/commit/bd60a209ca4b0989663edbbc591bc7da80294827) - **build:** update R version to 4.2.0 in lint workflows [(#11262)](https://github.com/stdlib-js/stdlib/pull/11262) _(by Mara Averick)_
 -   [`cf9c83f`](https://github.com/stdlib-js/stdlib/commit/cf9c83fa09765f78db1c0a9d1bec4d713c25f0b6) - **chore:** fix JavaScript and EditorConfig lint errors [(#10947)](https://github.com/stdlib-js/stdlib/pull/10947) _(by Sumithraju)_
 
 </details>
@@ -36,8 +37,9 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Mara Averick
 -   Sumithraju
 
 </section>
